@@ -9,6 +9,10 @@ body {
   background: #20469B;
 }
 
+.container {
+
+}
+
 .banner {
   background-image: url("https://www.logolynx.com/images/logolynx/39/397ae4f0249bb2a5a973159607e1b098.png");
   background-size: cover;
@@ -26,8 +30,9 @@ body {
 }
 
 .list {
+  display: flex;
   justify-content: space-between;
-  padding: none;
+  // padding: none;
 }
 
 ul {
@@ -35,7 +40,7 @@ ul {
   text-align: center;
   text-decoration: none;
   list-style-type: none;
-  padding: none;
+  padding: 0;
 }
 
 li {
