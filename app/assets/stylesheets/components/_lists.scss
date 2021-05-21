@@ -24,9 +24,9 @@ body {
 }
 
 .list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 150px);
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: repeat(3, 150px);
   text-align: center;
   text-decoration: none;
   list-style-type: none;
@@ -43,6 +43,15 @@ body {
   // padding: 0;
 }
 
+.list-pad {
+  padding: 16px 0;
+  }
+
+.list-pad-show{
+  padding: 0;
+}
+
+
 ul {
   // display: flex;
   // text-align: center;
@@ -58,6 +67,6 @@ ul {
 ul li {
     background: #FDC321;
     padding-left: 5px;
-    margin: 5px 5px 5px 5px;
+    margin: 16px;
     border-radius: 5px;
   }
