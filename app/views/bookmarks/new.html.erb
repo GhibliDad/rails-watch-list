@@ -6,11 +6,11 @@
   <%= f.association :movie %>
   <%= f.input :comment %>
     <div class="bottom-btn">
-      <a href=""><%= f.submit %></a>
+      <%= f.submit %>
     </div>
   <% end %>
   <div class="bottom-btn">
-    <a href=""><%= link_to "BACK TO LISTS", lists_path %></a>
+    <%= link_to "BACK TO LISTS", lists_path %>
   </div>
 
 </div>
