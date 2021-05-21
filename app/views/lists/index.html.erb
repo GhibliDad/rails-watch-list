@@ -1,10 +1,14 @@
-<h1>LISTS</h1>
-  <ul>
-    <% @lists.each do |list| %>
-      <li><p><strong><%= link_to list.name, list_path(list) %></strong></p>
-        <p><%= link_to "CREATE BOOKMARK", new_list_bookmark_path(list) %></p>
-        <p><%= link_to "DESTROY LIST", list_path(list), method: :delete, data: { confirm: "Are you sure?" } %></p>
-      </li>
-    <% end %>
-  </ul>
-<p><%= link_to "CREATE LIST", new_list_path %></p>
+<div class="container">
+  <div class="banner"><h1>LISTS</h1></div>
+    <div class="list">
+      <ul>
+        <% @lists.each do |list| %>
+          <li><p><strong><%= link_to list.name, list_path(list) %></strong></p>
+            <p><%= link_to "CREATE BOOKMARK", new_list_bookmark_path(list) %></p>
+            <p><%= link_to "DESTROY LIST", list_path(list), method: :delete, data: { confirm: "Are you sure?" } %></p>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <p><%= link_to "CREATE LIST", new_list_path %></p>
+</div>
