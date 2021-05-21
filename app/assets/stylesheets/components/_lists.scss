@@ -5,6 +5,10 @@
 //   background-image: center;
 // }
 
+body {
+  background: #20469B;
+}
+
 .banner {
   background-image: url("https://www.logolynx.com/images/logolynx/39/397ae4f0249bb2a5a973159607e1b098.png");
   background-size: cover;
@@ -13,9 +17,31 @@
 }
 
 .title {
-  color: yellow;
+  color: #FDC321;
   font-size: 48px;
   font-weight: bolder;
   text-align: center;
   justify: center;
+  margin-bottom: 50px;
+}
+
+.list {
+  justify-content: space-between;
+  padding: none;
+}
+
+ul {
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  padding: none;
+}
+
+li {
+  padding: 50px;
+}
+
+.create-btn {
+  text-align: center;
 }

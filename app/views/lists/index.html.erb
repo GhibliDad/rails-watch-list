@@ -1,5 +1,6 @@
 <div class="container">
-  <div class="banner" style=""><h1 class="title">LISTS</h1></div>
+  <div class="banner" style=""></div>
+    <h1 class="title">LISTS</h1>
     <div class="list">
       <ul>
         <% @lists.each do |list| %>
@@ -10,5 +11,5 @@
         <% end %>
       </ul>
     </div>
-  <p><%= link_to "CREATE LIST", new_list_path %></p>
+  <p class="create-btn"><%= link_to "CREATE LIST", new_list_path %></p>
 </div>
