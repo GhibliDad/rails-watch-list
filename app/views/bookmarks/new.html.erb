@@ -1,8 +1,16 @@
-<h1>NEW BOOKMARK</h1>
+<div class="container">
 
-<%= simple_form_for [@list, @bookmark] do |f| %>
-<%= f.association :movie %>
-<%= f.input :comment %>
-<%= f.submit %>
-<% end %>
-<%= link_to "BACK TO LISTS", lists_path %>
+  <h1>NEW BOOKMARK</h1>
+
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.association :movie %>
+  <%= f.input :comment %>
+    <div class="bottom-btn">
+      <a href=""><%= f.submit %></a>
+    </div>
+  <% end %>
+  <div class="bottom-btn">
+    <a href=""><%= link_to "BACK TO LISTS", lists_path %></a>
+  </div>
+
+</div>

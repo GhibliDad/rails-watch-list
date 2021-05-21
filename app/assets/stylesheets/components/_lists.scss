@@ -13,12 +13,6 @@ body {
 
 }
 
-.banner {
-  background-image: url("https://www.logolynx.com/images/logolynx/39/397ae4f0249bb2a5a973159607e1b098.png");
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
-}
 
 .title {
   color: #FDC321;
@@ -30,23 +24,40 @@ body {
 }
 
 .list {
-  display: flex;
-  justify-content: space-between;
-  // padding: none;
-}
-
-ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
   text-align: center;
   text-decoration: none;
   list-style-type: none;
+  padding: 16px;
+}
+
+.list-item {
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: repeat(3, 250px);
+  // text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  // padding: 0;
+}
+
+ul {
+  // display: flex;
+  // text-align: center;
+  // text-decoration: none;
+  // list-style-type: none;
   padding: 0;
 }
 
-li {
-  padding: 50px;
-}
+// li {
+//   padding: 50px;
+// }
 
-.create-btn {
-  text-align: center;
-}
+ul li {
+    background: #FDC321;
+    padding-left: 5px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+  }

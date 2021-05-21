@@ -1,0 +1,17 @@
+.bottom-btn {
+  color: #FDC321;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.8s ease;
+  border: 1px solid #0F60C4;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bottom-btn :hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  text-decoration: none;
+  color: #FDC321;
+}

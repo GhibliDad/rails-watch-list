@@ -4,12 +4,18 @@
     <div class="list">
       <ul>
         <% @lists.each do |list| %>
-          <li><p><strong><%= link_to list.name, list_path(list) %></strong></p>
-            <p><%= link_to "CREATE BOOKMARK", new_list_bookmark_path(list) %></p>
-            <p><%= link_to "DESTROY LIST", list_path(list), method: :delete, data: { confirm: "Are you sure?" } %></p>
-          </li>
+          <div class="list-item">
+            <li>
+              <div><p><strong><%= link_to list.name, list_path(list) %></strong></p>
+                <p><%= link_to "CREATE BOOKMARK", new_list_bookmark_path(list) %></p>
+                <p><%= link_to "DESTROY LIST", list_path(list), method: :delete, data: { confirm: "Are you sure?" } %></p>
+              </div>
+            </li>
+          </div>
         <% end %>
       </ul>
     </div>
-  <p class="create-btn"><%= link_to "CREATE LIST", new_list_path %></p>
+  <div class="bottom-btn">
+    <a class="" href="#"><%= link_to "CREATE LIST", new_list_path %></a>
+  </div>
 </div>
