@@ -1,9 +1,9 @@
 <h1>LISTS</h1>
   <ul>
     <% @lists.each do |list| %>
-      <li><strong><%= link_to list.name, list_path(list) %></strong>
-        <%= link_to "CREATE BOOKMARK",
-            new_list_bookmark_path(list) %>
+      <li><p><strong><%= link_to list.name, list_path(list) %></strong></p>
+        <p><%= link_to "CREATE BOOKMARK", new_list_bookmark_path(list) %></p>
+        <p><%= link_to "DESTROY LIST", list_path(list), method: :delete, data: { confirm: "Are you sure?" } %></p>
       </li>
     <% end %>
   </ul>
